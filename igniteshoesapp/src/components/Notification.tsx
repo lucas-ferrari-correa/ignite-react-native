@@ -9,11 +9,6 @@ type Props = {
   onClose: () => void;
 }
 
-type AdditionalDataProps = {
-  route?: string;
-  product_id?: string;
-}
-
 export function Notification({ data, onClose }: Props) {
   function handleOnPress() {
     if (data.launchURL) {
